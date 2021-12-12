@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfddb305-4663-458a-941a-452cec00ee86" name="Changes" comment="Add project files">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/ImmutableLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/collections/immutable/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/QueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections/QueueTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="bfddb305-4663-458a-941a-452cec00ee86" name="Changes" comment="Fix bugs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +149,7 @@
       <updated>1639218562451</updated>
       <workItem from="1639218568521" duration="2144000" />
       <workItem from="1639303793661" duration="16690000" />
-      <workItem from="1639325387958" duration="601000" />
+      <workItem from="1639325387958" duration="793000" />
     </task>
     <task id="LOCAL-00001" summary="Add project files">
       <created>1639324922170</created>
@@ -166,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639324922170</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix bugs">
+      <created>1639326153600</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639326153600</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +185,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add project files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add project files" />
+    <MESSAGE value="Fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bugs" />
   </component>
 </project>
