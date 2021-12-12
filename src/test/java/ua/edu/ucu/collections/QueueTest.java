@@ -6,6 +6,7 @@ import static org.junit.Assert.*;
 
 public class QueueTest {
     Queue queue;
+
     @Before
     public void setUp() {
         queue = new Queue();
