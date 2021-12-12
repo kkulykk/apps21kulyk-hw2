@@ -30,92 +30,92 @@ class ImmutableLinkedListTest {
     }
 
     @Test
-    void get() {
+    void testGet() {
         assertEquals(linkedList.get(2), 30);
         assertThrows(IllegalArgumentException.class, () -> linkedList.get(5));
     }
 
     @Test
-    void remove() {
+    void testRemove() {
         assertArrayEquals(linkedList.remove(2).toArray(), new Object[]{10, 20, 40});
         assertThrows(IllegalArgumentException.class, () -> linkedList.remove(5));
     }
 
     @Test
-    void set() {
+    void testSet() {
         assertArrayEquals(linkedList.set(2, 1000).toArray(), new Object[]{10, 20, 1000, 40});
         assertThrows(IllegalArgumentException.class, () -> linkedList.set(15, 10));
     }
 
     @Test
-    void indexOf() {
+    void testIndexOf() {
         assertEquals(linkedList.indexOf(20), 1);
     }
 
     @Test
-    void size() {
+    void testSize() {
         assertEquals(linkedList.size(), 4);
     }
 
     @Test
-    void clear() {
+    void testClear() {
         assertEquals(linkedList.clear().size(), 4);
         assertNull(linkedList.clear().get(1));
     }
 
     @Test
-    void isEmpty() {
+    void testIsEmpty() {
         assertTrue( new ImmutableLinkedList().isEmpty());
     }
 
     @Test
-    void toArray() {
+    void testToArray() {
         assertArrayEquals(linkedList.toArray(), new Object[]{10, 20, 30, 40});
     }
 
     @Test
-    void addFirst() {
+    void testAddFirst() {
         assertArrayEquals(linkedList.addFirst(2).toArray(), new Object[]{2, 10, 20, 30, 40});
     }
 
     @Test
-    void addLast() {
+    void testAddLast() {
         assertArrayEquals(linkedList.addLast(2).toArray(), new Object[]{10, 20, 30, 40, 2});
     }
 
     @Test
-    void getHead() {
+    void testGetHead() {
         assertEquals(linkedList.getHead().getValue(), 10);
     }
 
     @Test
-    void getTail() {
+    void testGetTail() {
         assertEquals(linkedList.getTail().getValue(), 40);
     }
 
     @Test
-    void getFirst() {
+    void testGetFirst() {
         assertEquals(linkedList.getFirst(), 10);
         ImmutableLinkedList list2 = new ImmutableLinkedList();
         assertThrows(IllegalArgumentException.class, list2::getFirst);
     }
 
     @Test
-    void getLast() {
+    void testGetLast() {
         assertEquals(linkedList.getLast(), 40);
         ImmutableLinkedList list2 = new ImmutableLinkedList();
         assertThrows(IllegalArgumentException.class, list2::getLast);
     }
 
     @Test
-    void removeFirst() {
+    void testRemoveFirst() {
         assertEquals(linkedList.removeFirst().getFirst(), 20);
         ImmutableLinkedList list2 = new ImmutableLinkedList();
         assertThrows(IllegalArgumentException.class, list2::removeFirst);
     }
 
     @Test
-    void removeLast() {
+    void testRemoveLast() {
         assertEquals(linkedList.removeLast().getLast(), 30);
         ImmutableLinkedList list2 = new ImmutableLinkedList();
         assertThrows(IllegalArgumentException.class, list2::removeLast);

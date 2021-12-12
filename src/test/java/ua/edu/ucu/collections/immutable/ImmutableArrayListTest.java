@@ -31,47 +31,47 @@ class ImmutableArrayListTest {
     }
 
     @Test
-    void get() {
+    void testGet() {
         assertEquals(arrayList.get(2), 30);
         assertThrows(IllegalArgumentException.class, () -> arrayList.get(5));
     }
 
     @Test
-    void remove() {
+    void testRemove() {
         assertArrayEquals(arrayList.remove(2).toArray(), new Object[]{10, 20, 40});
         assertThrows(IllegalArgumentException.class, () -> arrayList.remove(5));
     }
 
     @Test
-    void set() {
+    void testSet() {
         assertArrayEquals(arrayList.set(2, 1000).toArray(), new Object[]{10, 20, 1000, 40});
         assertThrows(IllegalArgumentException.class, () -> arrayList.set(15, 10));
     }
 
     @Test
-    void indexOf() {
+    void testIndexOf() {
         assertEquals(arrayList.indexOf(20), 1);
     }
 
     @Test
-    void size() {
+    void testSize() {
         assertEquals(arrayList.size(), 4);
     }
 
     @Test
-    void clear() {
+    void testClear() {
         assertEquals(arrayList.clear().size(), 4);
         assertNull(arrayList.clear().get(1));
     }
 
 
     @Test
-    void isEmpty() {
+    void testIsEmpty() {
         assertTrue(new ImmutableArrayList().isEmpty());
     }
 
     @Test
-    void toArray() {
+    void testToArray() {
         assertArrayEquals(arrayList.toArray(), new Object[]{10, 20, 30, 40});
     }
 }
