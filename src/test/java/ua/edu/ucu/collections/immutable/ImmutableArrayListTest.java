@@ -1,6 +1,6 @@
 package ua.edu.ucu.collections.immutable;
 
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,7 +9,7 @@ public class ImmutableArrayListTest {
 
     ImmutableArrayList arrayList;
 
-    @BeforeEach
+    @Before
     public void setUp() {
         arrayList = new ImmutableArrayList(new Object[] {10, 20, 30, 40});
     }

@@ -1,6 +1,6 @@
 package ua.edu.ucu.collections.immutable;
 
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,7 +9,7 @@ public class ImmutableLinkedListTest {
 
     ImmutableLinkedList linkedList;
 
-    @BeforeEach
+    @Before
     public void setUp() {
         linkedList = new ImmutableLinkedList(new Object[] {10, 20, 30, 40});
     }

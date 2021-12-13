@@ -1,6 +1,6 @@
 package ua.edu.ucu.collections.immutable;
 
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -10,7 +10,7 @@ public class NodeTest {
     Node nextNode;
     Node previousNode;
 
-    @BeforeEach
+    @Before
     public void setUp() {
         nextNode = new Node();
         previousNode = new Node();
