@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class NodeTest {
+public class NodeTest {
 
     Node nextNode;
     Node previousNode;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         nextNode = new Node();
         previousNode = new Node();
         previousNode.setNext(nextNode);
@@ -21,39 +21,39 @@ class NodeTest {
     }
 
     @Test
-    void testToString() {
+    public void testToString() {
         assertEquals(nextNode.toString(), "10");
     }
 
     @Test
-    void getPrevious() {
+    public void getPrevious() {
         assertEquals(nextNode.getPrevious(), previousNode);
     }
 
     @Test
-    void setPrevious() {
+    public void setPrevious() {
         previousNode.setPrevious(nextNode);
         assertEquals(previousNode.getPrevious(), nextNode);
     }
 
     @Test
-    void getValue() {
+    public void getValue() {
         assertEquals(nextNode.getValue(), 10);
     }
 
     @Test
-    void setValue() {
+    public void setValue() {
         nextNode.setValue(100);
         assertEquals(nextNode.toString(), "100");
     }
 
     @Test
-    void getNext() {
+    public void getNext() {
         assertEquals(previousNode.getNext(), nextNode);
     }
 
     @Test
-    void setNext() {
+    public void setNext() {
         nextNode.setNext(previousNode);
         assertEquals(nextNode.getNext(), previousNode);
     }
